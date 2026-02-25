@@ -21,12 +21,13 @@
   display: flex;
   min-height: 100vh;
   width: 100%;
-  max-width: 800px;
+  max-width: 100%;
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
   background-color: var(--foreground);
-  padding: 120px 60px;
+  padding: 80px 32px;
+  box-sizing: border-box;
 }
 
 .intro {
@@ -38,20 +39,20 @@
 }
 
 .intro h1 {
-  max-width: 320px;
-  font-size: 40px;
+  max-width: 100%;
+  width: 100%;
+  font-size: clamp(28px, 4.5vw, 40px);
   font-weight: 600;
-  line-height: 48px;
-  letter-spacing: -2.4px;
-  text-wrap: balance;
+  line-height: 1.15;
+  letter-spacing: -0.03em;
   color: var(--text-primary);
 }
 
 .intro p {
-  max-width: 440px;
-  font-size: 18px;
-  line-height: 32px;
-  text-wrap: balance;
+  max-width: 100%;
+  width: 100%;
+  font-size: clamp(14px, 2.2vw, 18px);
+  line-height: 1.6;
   color: var(--text-secondary);
 }
 
@@ -64,9 +65,10 @@
   display: flex;
   flex-direction: row;
   width: 100%;
-  max-width: 440px;
+  max-width: 100%;
   gap: 16px;
   font-size: 14px;
+  flex-wrap: wrap;
 }
 
 .ctas a {
