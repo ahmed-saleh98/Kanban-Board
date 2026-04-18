@@ -13,13 +13,6 @@
       "description": "Implement login, signup, and password reset screens",
       "column": "in_progress",
       "priority": "HIGH"
-    },
-    {
-      "id": "4773",
-      "title": "safsdfdsfsdf",
-      "description": "",
-      "priority": "MEDIUM",
-      "column": "todo"
     }
   ]
 }

@@ -21,7 +21,8 @@ import { useEffect } from 'react';
  * Backend API endpoint
  * Points to json-server running on localhost:4000
  */
-const API_URL = 'http://localhost:4000/tasks';
+const API_URL =
+  process.env.NEXT_PUBLIC_API_URL || 'http://localhost:4000/tasks';
 
 export const useTasksAPI = () => {
   const { setLocalTasks } = useStore();
