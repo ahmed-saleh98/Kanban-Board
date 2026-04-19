@@ -4,8 +4,8 @@
       "id": "1",
       "title": "API integration",
       "description": "Connect frontend to REST API endpoints",
-      "column": "review",
-      "priority": "HIGH"
+      "column": "todo",
+      "priority": "MEDIUM"
     },
     {
       "id": "2",
@@ -13,6 +13,90 @@
       "description": "Implement login, signup, and password reset screens",
       "column": "done",
       "priority": "HIGH"
+    },
+    {
+      "id": "3",
+      "title": "Unit tests",
+      "description": "Write tests for utility functions and custom hooks",
+      "column": "review",
+      "priority": "LOW"
+    },
+    {
+      "id": "4",
+      "title": "Performance audit",
+      "description": "Check Lighthouse scores and analyze bundle size",
+      "column": "todo",
+      "priority": "LOW"
+    },
+    {
+      "id": "5",
+      "title": "Notification system",
+      "description": "Add toast notifications for success and error states",
+      "column": "in_progress",
+      "priority": "MEDIUM"
+    },
+    {
+      "id": "6",
+      "title": "User settings page",
+      "description": "Profile editing, preferences, and account management",
+      "column": "todo",
+      "priority": "LOW"
+    },
+    {
+      "id": "7",
+      "title": "File upload component",
+      "description": "Drag and drop file upload with image preview",
+      "column": "in_progress",
+      "priority": "MEDIUM"
+    },
+    {
+      "id": "8",
+      "title": "Mobile responsive navigation",
+      "description": "Convert desktop sidebar to a hamburger drawer on small screens",
+      "column": "in_progress",
+      "priority": "HIGH"
+    },
+    {
+      "id": "9",
+      "title": "Dark mode support",
+      "description": "Add theme toggle and map CSS variables to components",
+      "column": "done",
+      "priority": "MEDIUM"
+    },
+    {
+      "id": "10",
+      "title": "Dashboard layout",
+      "description": "Build responsive sidebar and main content area",
+      "column": "review",
+      "priority": "MEDIUM"
+    },
+    {
+      "id": "11",
+      "title": "Design system tokens",
+      "description": "Set up color palette, typography, and spacing scales in MUI",
+      "column": "review",
+      "priority": "HIGH"
+    },
+    {
+      "id": "12",
+      "title": "Implement search debounce",
+      "description": "Prevent API spam by delaying search query updates by 300ms",
+      "column": "done",
+      "priority": "MEDIUM"
+    },
+    {
+      "id": "13",
+      "title": "Setup CI/CD pipeline",
+      "description": "Configure GitHub Actions for automated testing and linting",
+      "column": "todo",
+      "priority": "HIGH"
+    },
+    {
+      "id": "14",
+      "title": "Accessibility (a11y) audit",
+      "description": "Ensure all form inputs have labels and correct ARIA roles",
+      "column": "in_progress",
+      "priority": "LOW"
     }
   ]
 }

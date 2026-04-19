@@ -34,6 +34,13 @@ import {
   LOAD_MORE_INCREMENT,
 } from '../constants/config';
 
+// priority mapping object
+const PRIORITY_WEIGHT: Record<Task['priority'], number> = {
+  HIGH: 1,
+  MEDIUM: 2,
+  LOW: 3,
+};
+
 /**
  * Board: Renders the Kanban board with 4 columns
  * Manages visible task limits per column and handles drag-and-drop
@@ -139,10 +146,14 @@ function Board() {
               t.description.toLowerCase().includes(searchQuery.toLowerCase());
             return matchesColumn && matchesSearch;
           });
+          // Sort the tasks by priority before slicing them
+          const sortedTasks = [...allColumnTasks].sort((a, b) => {
+            return PRIORITY_WEIGHT[a.priority] - PRIORITY_WEIGHT[b.priority];
+          });
 
           // Pagination: Only show tasks up to the visible limit
           const currentLimit = visibleLimits[columnId as Task['column']];
-          const displayedTasks = allColumnTasks.slice(0, currentLimit);
+          const displayedTasks = sortedTasks.slice(0, currentLimit);
           const hasMoreTasks = allColumnTasks.length > currentLimit;
 
           return (
