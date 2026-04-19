@@ -65,7 +65,11 @@ export const useTasksAPI = () => {
       updatedTask: Partial<Omit<Task, 'id'>> & { id: string },
     ) => {
       const { id, ...rest } = updatedTask;
-      await axios.put(`${API_URL}/${id}`, rest);
+      // If the API URL contains 'mockapi', use PUT. Otherwise, use PATCH.
+      const isMockApi = API_URL.includes('mockapi');
+      const updateMethod = isMockApi ? axios.put : axios.patch;
+
+      await updateMethod(`${API_URL}/${id}`, rest);
     },
     onSuccess: () => {
       // Refetch tasks to ensure data consistency
