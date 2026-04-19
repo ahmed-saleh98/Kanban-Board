@@ -11,7 +11,7 @@
       "id": "2",
       "title": "Authentication flow",
       "description": "Implement login, signup, and password reset screens",
-      "column": "in_progress",
+      "column": "done",
       "priority": "HIGH"
     }
   ]

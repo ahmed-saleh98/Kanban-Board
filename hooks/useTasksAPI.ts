@@ -65,7 +65,7 @@ export const useTasksAPI = () => {
       updatedTask: Partial<Omit<Task, 'id'>> & { id: string },
     ) => {
       const { id, ...rest } = updatedTask;
-      await axios.patch(`${API_URL}/${id}`, rest);
+      await axios.put(`${API_URL}/${id}`, rest);
     },
     onSuccess: () => {
       // Refetch tasks to ensure data consistency
@@ -94,7 +94,9 @@ export const useTasksAPI = () => {
     },
   });
 
-  // 4. Delete Task (NEW)
+  // 4. Delete Task Mutation
+  // Called when user clicks delete button on a task
+  // @param id - ID of the task to delete
   const deleteTaskMutation = useMutation({
     mutationFn: async (id: string) => {
       await axios.delete(`${API_URL}/${id}`);
@@ -104,7 +106,6 @@ export const useTasksAPI = () => {
     },
   });
 
-  // Update return statement to include createTask
   return {
     isLoading,
     updateTask: updateTaskMutation.mutate,
