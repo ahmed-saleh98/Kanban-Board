@@ -1,6 +1,6 @@
 # 📝 Kanban Board Task Manager
 
-A responsive, high-performance Kanban board application built for a Frontend Developer Assessment. It features seamless drag-and-drop functionality, optimistic UI updates, and robust state management.
+A responsive, high-performance Kanban board application. It features seamless drag-and-drop functionality, optimistic UI updates, and robust state management.
 
 ## ✨ Features
 
