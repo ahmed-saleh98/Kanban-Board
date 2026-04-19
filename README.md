@@ -33,7 +33,7 @@ Ensure you have Node.js installed (v18+ recommended).
 Clone the repository and install the required NPM packages:
 
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/ahmed-saleh98/Kanban-Board
 cd kanban-board
 npm install
 ```
